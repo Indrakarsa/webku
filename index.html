@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indrakarsa</title>
+
+    <!-- Favicon and app icon -->
+  <link rel="icon" href="logo.jpeg" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="logo.jpeg" />
+  <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon" />
+
+  
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' };
+  </script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="min-h-screen flex flex-col items-center justify-start px-4 py-10 text-white dark:bg-black">
+  
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div id="loading-greeting">Memuat...</div>
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+  </div>
+
+  <!-- Background -->
+  <div class="animated-bg"></div>
+  <div class="fog"></div>
+
+  <!-- Waktu & Salam -->
+  <div id="time-box" class="fixed top-4 left-4 bg-white/10 backdrop-blur-md text-white px-4 py-2 rounded-xl shadow-lg z-50 text-sm">
+    <div id="greeting" class="font-semibold"></div>
+    <div id="datetime"></div>
+  </div>
+
+  <!-- Foto Profil -->
+  <img src="logo.png" alt="Foto Profil" class="rounded-full w-32 h-32 border-4 border-white shadow-lg animate-bounce">
+
+  <!-- Info & Sosial Media -->
+  <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 w-full max-w-xl shadow-xl text-center z-10">
+    <h1 class="mt-4 text-3xl font-bold">Indrakarsa</h1>
+    <p class="text-sm mt-2 mb-4">Konten Kreator | Preset & Anime<br> paid edit dm ig</p>
+    <div class="socials" aria-label="social links">
+          <a class="link-btn neon" onclick="openLink('https://tiktok.com/@airikazehaya')" title="Tiktok">TT</a>
+          <a class="link-btn neon" onclick="openLink('https://tiktok.com/@miichankgn')" title="tiktok2">tt2</a>
+          <a class="link-btn neon" onclick="openLink('https://youtube.com/@indra_karsa')" title="YouTube">YT</a>
+        </div>
+
+
+    <p class="text-xs mb-5 text-gray-300">Email bisnis: 
+      <a href="mailto:indrawangyy@gmail.com" class="underline hover:text-white">indrawangyy@gmail.com</a>
+    </p>
+
+
+    <div class="flex flex-col gap-3">
+      <button class="link-btn neon" onclick="openLink('https://www.youtube.com/@indra_karsa', this)">
+        YOUTUBE <br>ᴍᴏꜰᴜᴡᴀɴɢʏʏ | 168 subscriber
+      </button>
+      <button class="link-btn neon" onclick="openLink('https://tiktok.com/@indra_karsa', this)">
+        TIKTOK PRESET AM <br> DGZ 𝖋𝖙 𝙆𝙂𝙉 | 2701 Followers | 99.5k Likes
+      </button>
+      <button class="link-btn neon" onclick="openLink('https://tiktok.com/@miichankgn', this)">
+        TIKTOK ANIME 1 <br>Mιι Sҽɳραι`𝖋𝖙 𝙆𝙂𝙎 | 5323 Followers | 650.2k Likes
+      </button>
+      <button class="link-btn neon" onclick="openLink('https://tiktok.com/@rem_kawaii7', this)">
+        TIKTOK ANIME 2 <br>𝙍𝙚𝙢 𝙆𝙖𝙜𝙚𝙣𝙤𝙪 | 11102 Followers | 94.4k Likes
+      </button>
+      <button class="link-btn neon" onclick="openLink('https://instagram.com/indrakarsaa', this)"> 
+        INSTAGRAM <br> indrakarsaa | 0 followers | 0 Likes
+      </button>
+      <button class="link-btn neon" onclick="trackClick('AM MOD'); vibrateButton(this)">
+        ALIGHT MOTION MOD APK (ANDROID)
+      </button>
+    </div>
+
+    <!-- Video -->
+    <div class="kotak-tumpul mt-6">
+      <video controls>
+        <source src="Mιι Sҽɳραι`𝖋𝖙 𝙆𝙂𝙉 (@miichankgn).mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!--foto promosi-->
+    <div class="kotak-tumpul mt-6">
+      <img src="promosi.jpeg">
+    </div>
+
+    <div class="flex flex-col gap-3 mt-6">
+      <button class="link-btn neon" onclick="openLink('https://wa.me/6285664110790?text=mau+order+am+Prem+indra', this)">
+        ORDER KE WA 1
+      </button>
+      <button class="link-btn" onclick="openLink('https://wa.me/6285664110791?text=mau+order+am+Prem+indra', this)">
+        ORDER WA KE 2
+      </button>
+    </div>
+
+    <p class="mt-10 text-xs text-gray-300">© 2025 IndraKarsa. All rights reserved.</p>
+  </div>
+
+  <!-- TikTok Embed -->
+<div class="kotak-tumpul mt-6">
+  <blockquote class="tiktok-embed"
+    cite="https://www.tiktok.com/@rizzuy_op/video/7563923809254771975"
+    data-video-id="7563923809254771975"
+    style="max-width: 605px; min-width: 325px;">
+    <section>
+      <a target="_blank" title="@rizzuy_op" href="https://www.tiktok.com/@rizzuy_op">@rizzuy_op</a>
+      punya pacar tetangga 🤭🤙🏻
+    </section>
+  </blockquote>
+  <script async src="https://www.tiktok.com/embed.js"></script>
+</div>
+
+
+  <!-- Musik Popup -->
+  <div id="music-popup" class="fixed bottom-4 right-4 bg-white/10 backdrop-blur-md text-white px-4 py-3 rounded-xl shadow-lg z-50 w-72 flex flex-col gap-2 neon">
+    <div class="text-sm font-semibold" id="music-title">🎵 Tidak ada musik</div>
+    <input type="range" id="progress" value="0" class="w-full accent-red-500" />
+    <div class="flex items-center justify-between text-xs text-gray-300">
+      <span id="current-time">0:00</span>
+      <span id="duration">0:00</span>
+    </div>
+    <div class="flex justify-center gap-3 mt-2">
+      <button onclick="playMusic()" class="px-3 py-1 bg-red-500 hover:bg-red-700 rounded-full font-semibold text-sm">Play</button>
+      <button onclick="nextMusic()" class="px-3 py-1 bg-white/20 hover:bg-white/40 rounded-full font-semibold text-sm">Next</button>
+      <button onclick="stopMusic()" class="px-3 py-1 bg-white/20 hover:bg-white/40 rounded-full font-semibold text-sm">Stop</button>
+    </div>
+  </div>
+
+  <audio id="audio-player" preload="auto"></audio>
+    
+  <!-- Custom JS -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
